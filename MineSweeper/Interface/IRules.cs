@@ -9,5 +9,6 @@ namespace MineSweeper.Interface
     public interface IRules
     {
 		void TriggerAction(Block block);
+		void InitMap();
     }
 }
