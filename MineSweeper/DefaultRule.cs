@@ -7,9 +7,30 @@ using MineSweeper.Interface;
 
 namespace MineSweeper
 {
-	internal class DefaultRule : IRules
+	public class DefaultRule : IRules
 	{
-		public void TriggerAction(IGame game, Block block)
+		private GameContext _gameContext;
+		public DefaultRule(GameContext context)
+		{
+			_gameContext = context;
+		}
+		
+		public void TriggerAction(Block block)
+		{
+
+		}
+
+		private void TriggerSafeBlock(Block block)
+		{
+			foreach(var blk in block.AdjacentBlocks)
+			{
+				if(blk.BlockType == "Safe")
+				{
+
+				}
+			}
+		}
+		private void Generate()
 		{
 
 		}

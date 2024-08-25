@@ -8,6 +8,6 @@ namespace MineSweeper.Interface
 {
     public interface IRules
     {
-		void TriggerAction(IGame game, Block block);
+		void TriggerAction(Block block);
     }
 }
